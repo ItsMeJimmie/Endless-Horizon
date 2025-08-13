@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://hlq6povb2mdw"]
+
+[ext_resource type="Script" uid="uid://d0y6epiv7daph" path="res://SCRIPTS/isometric_tile.gd" id="1_stl5d"]
+[ext_resource type="Texture2D" uid="uid://bltkpp70yow0p" path="res://ASPERITE/SYSTEM/normalIsometricOuter.png" id="2_amsp7"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_stl5d")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_amsp7")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+visible = false
+position = Vector2(1, 32)
+polygon = PackedVector2Array(30, -47, -1, -63, -31, -48, -1, -33)
+
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

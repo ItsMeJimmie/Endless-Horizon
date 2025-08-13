@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://w83hvuexe76m"]
+
+[ext_resource type="Script" uid="uid://bsc0l7lrxlwww" path="res://SCRIPTS/main_menu.gd" id="1_a0y0m"]
+[ext_resource type="Theme" uid="uid://crj2mgke4ytp8" path="res://THEMES/mainMenuText.tres" id="1_sdxnn"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a0y0m")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.029
+anchor_top = 0.046
+anchor_right = 0.505
+anchor_bottom = 0.937
+offset_left = -0.408001
+offset_top = 0.191998
+offset_right = 0.23999
+offset_bottom = -0.176025
+
+[node name="GameTitle" type="Label" parent="VBoxContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme = ExtResource("1_sdxnn")
+theme_type_variation = &"HeaderLarge"
+theme_override_font_sizes/font_size = 80
+text = "ENDLESS HORIZON"
+autowrap_mode = 2
+
+[node name="Start" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_sdxnn")
+theme_type_variation = &"FlatButton"
+text = "START"
+
+[node name="Exit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_sdxnn")
+theme_type_variation = &"FlatButton"
+text = "EXIT"
+
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]

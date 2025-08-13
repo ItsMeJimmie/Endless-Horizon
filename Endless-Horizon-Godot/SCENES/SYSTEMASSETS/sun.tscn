@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://nameegw6cj7u"]
+
+[ext_resource type="Script" uid="uid://b05548actancn" path="res://SCRIPTS/sun.gd" id="1_gtd5v"]
+[ext_resource type="Texture2D" uid="uid://p2j1aksccmna" path="res://ASPERITE/SYSTEM/isometricSunBlock.png" id="2_kosct"]
+
+[node name="Sun" type="Node2D"]
+script = ExtResource("1_gtd5v")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_kosct")

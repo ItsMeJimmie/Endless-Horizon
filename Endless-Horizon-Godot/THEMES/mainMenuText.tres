@@ -1,0 +1,11 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://crj2mgke4ytp8"]
+
+[ext_resource type="FontFile" uid="uid://mhbx1i07c3r2" path="res://FONTS/SupremeSpike-KVO8D.otf" id="1_uuqbl"]
+
+[resource]
+default_font = ExtResource("1_uuqbl")
+default_font_size = 30
+HeaderLarge/font_sizes/font_size = 80
+HeaderLarge/fonts/font = ExtResource("1_uuqbl")
+HeaderMedium/font_sizes/font_size = 30
+HeaderMedium/fonts/font = ExtResource("1_uuqbl")
