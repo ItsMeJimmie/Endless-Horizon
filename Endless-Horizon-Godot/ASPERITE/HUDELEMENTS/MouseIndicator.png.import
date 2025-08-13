@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ba5el1qi8ov6j"
-path="res://.godot/imported/MouseIndicator.png-4d052108b098c3d5ff575242e76a594b.ctex"
+path="res://.godot/imported/MouseIndicator.png-480da13fb8e1b7d53fe073ac66e0028f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASPERITE/SYSTEM/MouseIndicator.png"
-dest_files=["res://.godot/imported/MouseIndicator.png-4d052108b098c3d5ff575242e76a594b.ctex"]
+source_file="res://ASPERITE/HUDELEMENTS/MouseIndicator.png"
+dest_files=["res://.godot/imported/MouseIndicator.png-480da13fb8e1b7d53fe073ac66e0028f.ctex"]
 
 [params]
 

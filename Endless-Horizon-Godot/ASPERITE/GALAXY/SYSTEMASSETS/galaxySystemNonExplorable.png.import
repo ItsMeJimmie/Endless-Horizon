@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bdtulqxwehjl"
-path="res://.godot/imported/galaxyNoSystem.png-26b473632dda303fcfa1d5e2e17ebb59.ctex"
+uid="uid://mcrvvllvbgin"
+path="res://.godot/imported/galaxySystemNonExplorable.png-5aa5bc640a5ab395c5bc01309177d51d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASPERITE/GALAXY/NOSYSTEM/galaxyNoSystem.png"
-dest_files=["res://.godot/imported/galaxyNoSystem.png-26b473632dda303fcfa1d5e2e17ebb59.ctex"]
+source_file="res://ASPERITE/GALAXY/SYSTEMASSETS/galaxySystemNonExplorable.png"
+dest_files=["res://.godot/imported/galaxySystemNonExplorable.png-5aa5bc640a5ab395c5bc01309177d51d.ctex"]
 
 [params]
 
