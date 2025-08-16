@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://bh77th7ovxeoo"]
+
+[ext_resource type="Script" uid="uid://cxubn4lt2nc2e" path="res://SCRIPTS/tradeShip.gd" id="1_ac1eu"]
+[ext_resource type="Texture2D" uid="uid://dgy65i3f5he6m" path="res://ASPERITE/NPC/tradeShip.png" id="1_ah502"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ah502"]
+size = Vector2(10, 10)
+
+[node name="TradeShip" type="Node2D"]
+script = ExtResource("1_ac1eu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ah502")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_ah502")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+path_desired_distance = 1.0
+target_desired_distance = 1.0
+path_postprocessing = 1
+simplify_path = true
+simplify_epsilon = 5.0

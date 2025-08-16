@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://b8a4g6agnonon"]
+[gd_scene load_steps=4 format=3 uid="uid://b8a4g6agnonon"]
 
 [ext_resource type="Script" uid="uid://c2k36l6jd4vv2" path="res://SCRIPTS/galaxy_isometric_tile.gd" id="1_7c3fe"]
 [ext_resource type="Texture2D" uid="uid://cei3il8du8ftf" path="res://ASPERITE/GALAXY/SYSTEMASSETS/galaxySystem.png" id="2_7c3fe"]
+[ext_resource type="StyleBox" uid="uid://cn1tgyeki7xot" path="res://THEMES-STYLES/planetPopupBox.tres" id="3_dtq76"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_7c3fe")
@@ -15,3 +16,15 @@ texture = ExtResource("2_7c3fe")
 visible = false
 position = Vector2(1, 32)
 polygon = PackedVector2Array(30, -47, -1, -63, -31, -48, -1, -33)
+
+[node name="Panel" type="Panel" parent="."]
+visible = false
+z_index = 1
+offset_left = 16.0
+offset_top = -131.0
+offset_right = 91.0
+offset_bottom = -31.0
+theme_override_styles/panel = ExtResource("3_dtq76")
+
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

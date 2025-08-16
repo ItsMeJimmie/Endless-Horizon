@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bp86fuoetlwcj" path="res://SCENES/MAP/SOLARSYSTEM/sortOfLivableIsometricTile.tscn" id="6_tdb61"]
 [ext_resource type="PackedScene" uid="uid://bn5sla0hdptku" path="res://SCENES/MAP/SOLARSYSTEM/hospitableIsometricTile.tscn" id="7_i2tcs"]
 [ext_resource type="PackedScene" uid="uid://c2ahakk80skm7" path="res://SCENES/MAP/SOLARSYSTEM/goldilocksIsometricTile.tscn" id="8_jmhbl"]
-[ext_resource type="Theme" uid="uid://wljjxjn07atx" path="res://THEMES/ZoneTheme.tres" id="10_urg34"]
+[ext_resource type="Theme" uid="uid://wljjxjn07atx" path="res://THEMES-STYLES/ZoneTheme.tres" id="10_urg34"]
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_jxep6"]
 resource_name = "Outer Zone"

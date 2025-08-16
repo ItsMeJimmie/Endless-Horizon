@@ -26,3 +26,15 @@ func navigate(delta: float) -> void:
 	)
 	position += newVelocity * delta
 	
+	
+func _on_area_2d_area_entered(area: Area2D) -> void:
+	if area.is_in_group("sector1"):
+		HUD.get_node("Control/Panel/VBoxContainer/SectorLocation").text = "Sector: 1"
+	elif area.is_in_group("sector2"):
+		HUD.get_node("Control/Panel/VBoxContainer/SectorLocation").text = "Sector: 2"
+	elif area.is_in_group("sector3"):
+		HUD.get_node("Control/Panel/VBoxContainer/SectorLocation").text = "Sector: 3"
+	elif area.is_in_group("sector4"):
+		HUD.get_node("Control/Panel/VBoxContainer/SectorLocation").text = "Sector: 4"
+	elif area.is_in_group("sector5"):
+		HUD.get_node("Control/Panel/VBoxContainer/SectorLocation").text = "Sector: 5"

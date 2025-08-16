@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c2niellkifm14"]
 
 [ext_resource type="Script" uid="uid://b74yk87g2tic5" path="res://SCRIPTS/ship.gd" id="1_v4wv7"]
-[ext_resource type="Texture2D" uid="uid://o5o08c5xsnsy" path="res://ASPERITE/ANIMATIONS/SHIP/ship.png" id="1_w4lkl"]
+[ext_resource type="Texture2D" uid="uid://o5o08c5xsnsy" path="res://ASPERITE/SHIP/ship.png" id="1_w4lkl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w4lkl"]
 size = Vector2(10, 10)
@@ -25,3 +25,5 @@ path_postprocessing = 1
 simplify_path = true
 simplify_epsilon = 5.0
 debug_enabled = true
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
