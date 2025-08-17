@@ -9,11 +9,3 @@ extends Node2D
 func _ready() -> void:
 	pass
 	
-func _on_area_2d_mouse_entered() -> void:
-	panel.visible = true
-	
-func _on_area_2d_mouse_exited() -> void:
-	panel.visible = false
-	
-func change_content():
-	pass
